@@ -75,5 +75,5 @@ We can consider spinning up larger instances of EC2s hosting Spark and/or additi
 * dashboard updated by **7am daily**:<br>
 We can consider using Airflow to schedule and automate the data pipeline jobs. Built-in retry and monitoring mechanism can enable us to meet user requirement.
 
-* database to be accessed by **100+ people**:<br>
+* database accessed by **100+ people**:<br>
 We can consider hosting our solution in production scale data warehouse in the cloud, with larger capacity to serve more users, and workload management to ensure equitable usage of resources across users.
