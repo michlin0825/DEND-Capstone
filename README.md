@@ -1,4 +1,4 @@
-### Data Engineering Capstone Project
+### Udacity Data Engineer Capstone
 
 #### Project Summary
 The project aims to answer US immigration from factors of immigrant demographics, destination city and temperature, and arrival date in the US. We extract data from two different sources, the I94 immigration dataset of 2016, and city temperature data from Kaggle. We design 3 dimension tables covering immigrant demographics spanning age, gender, and visa type, destination city and average temperature of 2013, and arrival date with flags on day of week, week of year, and month, and 1 fact table on immigration number. We use Spark for ETL jobs, and store result in parquet for downstream analysis.
