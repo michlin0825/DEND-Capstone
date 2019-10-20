@@ -53,7 +53,7 @@ The project aims to answer US immigration from factors of immigrant demographics
         D. count
 
 
-### Steps to pipeline data into chosen data model
+#### Steps to pipeline data into chosen data model
 
 1. Clean the data on nulls, data types, duplicates, etc
 2. Load staging tables for df_i94 and df_temp
@@ -62,7 +62,7 @@ The project aims to answer US immigration from factors of immigrant demographics
 5. Save processed dimension and fact tables in parquet for downstream query
 
 
-### Discussions
+#### Discussions
 Spark is chosen for this project as it is known for processing large amount of data fast (with in-memory compute), scale easily with additional worker nodes, with ability to digest different data formats (e.g. SAS, Parquet, CSV), and integrate nicely with cloud storage like S3 and warehouse like Redshift.
 
 The data update cycle is typically chosen on two criteria. One is the reporting cycle, the other is the availabilty of new data to be fed into the system. For example, if new batch of average temperature can be made available at monthly interval, we might settle for monthly data refreshing cycle.
