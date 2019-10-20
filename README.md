@@ -69,11 +69,11 @@ The data update cycle is typically chosen on two criteria. One is the reporting 
 
 There are also considerations in terms of scaling existing solution.
 
-## data size increased by 100x##:<br>
+###### data size increased by 100x##:<br>
 We can consider spinning up larger instances of EC2s hosting Spark and/or additional Spark work nodes. With added capacity arising from either vertical scaling or horizontal scaling, we should be able to accelerate processing time.
 
-## dashboard updated by 7am daily##:<br>
+###### dashboard updated by 7am daily##:<br>
 We can consider using Airflow to schedule and automate the data pipeline jobs. Built-in retry and monitoring mechanism can enable us to meet user requirement.
 
-## database to be accessed by 100+ people##:<br>
+###### database to be accessed by 100+ people##:<br>
 We can consider hosting our solution in production scale data warehouse in the cloud, with larger capacity to serve more users, and workload management to ensure equitable usage of resources across users.
